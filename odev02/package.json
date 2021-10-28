@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --open --mode development",
+    "test": "jest --coverage"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
@@ -15,4 +20,3 @@
     "webpack-dev-server": "^4.4.0"
   }
 }
-
