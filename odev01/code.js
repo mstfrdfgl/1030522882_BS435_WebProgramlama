@@ -14,6 +14,8 @@ function clickAnimals(image){
     }
     if(hak===0){
         document.getElementById("yenildiId").style.display="inline"
-        location.reload();
     }
+}
+function reload() {
+    location.reload();
 }
