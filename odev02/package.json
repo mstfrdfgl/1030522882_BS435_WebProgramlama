@@ -8,6 +8,12 @@
     "dev": "webpack serve --open --mode development",
     "test": "jest --coverage"
   },
+  "jest": {
+    "collectCoverageFrom":[
+      "src/**/*.(js|jsx)"
+    ],
+    "testRegex":"tests/./-test\\.(js|jsx)"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
