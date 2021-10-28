@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kediyi Bul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js"></script>
+</head>
+<body>
+    <h2>Kedi Bulmaca</h2>
+    <img id="img0" class="kart" onclick="findCat.clickAnimals(0)">
+    <img id="img1" class="kart" onclick="findCat.clickAnimals(1)">
+    <img id="img2" class="kart" onclick="findCat.clickAnimals(2)">
+    <div class="mesaj">
+        <p id="alanId">Kedi kartını bulmak için kartın üzerine tıklamalısın
+        </p>
+        <p id="kazandiId" style="display: none">
+            Tebrikler kazandınız. Yeniden oynamak için <span onclick="findCat.reload()" style="font-style: italic; color: white; cursor: pointer;">buraya </span>tıklayın.
+        </p>
+        <p id="yenildiId" style="display: none">
+            Maalesef kaybettiniz. Yeniden oynamak için <span onclick="findCat.reload()" style="font-style: italic; color: white; cursor: pointer;">buraya </span>tıklayın.
+        </p>
+    </div>
+</body>
+</html>
