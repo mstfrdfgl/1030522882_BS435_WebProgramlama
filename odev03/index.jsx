@@ -3,7 +3,6 @@ import ReactDOM, { render } from "react-dom";
 import { clickAnimals } from "./code";
 
 class App extends React.Component{
-
     constructor(props){
         super(props);
     this.state = {
