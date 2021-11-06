@@ -2,12 +2,10 @@ const path=require("path")
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports={
-    entry:'./index.jsx',
+    entry:'./src/index.jsx',
     output: {
         filename:"bundle.js",
         path: path.resolve(__dirname,'public'),
-        libraryTarget:"var",
-        library:"findCat"
     },
     module:{
         rules:[
@@ -24,7 +22,7 @@ module.exports={
         extensions:['.js','.jsx']
     },
     devServer:{
-        static:'./'
+        static:'./public'
     },
     optimization: {
         minimize: true,
