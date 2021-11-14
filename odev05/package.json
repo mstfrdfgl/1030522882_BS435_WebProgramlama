@@ -35,7 +35,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve --open --mode development",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start": "node src/server/server.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -49,6 +50,7 @@
   },
   "dependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^6.0.2",
