@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export class Game extends Component {
+export default class Game extends Component {
     constructor(props) {
         super(props);
         this.state = {
