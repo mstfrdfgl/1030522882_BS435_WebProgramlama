@@ -7,6 +7,8 @@ const session = require("express-session");
 const LocalStrategy = require('passport-local').Strategy;
 const Users = require('./db/users');
 
+const WsHandler = require('./ws-handler');
+
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use(express.static('public'));
 
 //JSON için
 app.use(bodyParser.json());
+
+WsHandler.init(app);
 
 
 //passport, session vs.
